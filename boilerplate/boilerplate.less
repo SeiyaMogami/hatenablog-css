@@ -28,7 +28,7 @@ html,
 body {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
     color: @text;
-    background-color: @background;
+    background-color: @bg-light;
 }
 
 a {
@@ -108,13 +108,14 @@ a.keyword {
 /* container */
 
 #container {
-    width: 940px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     padding-top: 37px; // グローバルヘッダを fixed にしているため
 
     #content {
+        margin-top: 30px;
         .clearfix;
     }
 }
@@ -126,12 +127,13 @@ a.keyword {
 /* 2カラムレイアウト */
 
 #main {
-    width: 600px;
+    width: 750px;
     float: left;
 }
 
 #box2 {
-    width: 300px;
+    // ひだりにマージン開ける
+    width: 230px;
     float: right;
 }
 
@@ -169,8 +171,7 @@ a.keyword {
 /* header */
 
 #blog-title {
-    margin: 30px 0;
-    padding: 20px 0;
+    text-align: center;
 }
 
 #title {
@@ -194,7 +195,9 @@ a.keyword {
     }
     #title,
     #blog-description {
-        padding-left: 20px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -216,13 +219,15 @@ a.keyword {
 
 .entry {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: @background;
+    border: 1px solid @border;
 }
 
 .entry-header {
     padding: 0 0 10px 0;
     margin-bottom: 20px;
-    border-bottom: 1px solid @border;
     position: relative;
 }
 
@@ -242,6 +247,7 @@ a.keyword {
         color: @link;
         text-decoration: none;
         font-size: 90%;
+        font-weight: normal;
     }
 }
 
@@ -274,7 +280,6 @@ a.keyword {
     font-size: 95%;
     line-height: 1.7;
     padding-bottom: 10px;
-    border-bottom: 1px solid @border;
 
     p {
         margin: 0 0 1em 0;
@@ -294,15 +299,16 @@ a.keyword {
     }
 
     h2 {
-        font-size: 150%;
+        font-size: 140%;
+        border-bottom: 1px solid @border;
     }
 
     h3 {
-        font-size: 140%;
+        font-size: 130%;
     }
 
     h4 {
-        font-size: 130%;
+        font-size: 120%;
     }
 
     h5 {

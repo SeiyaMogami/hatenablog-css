@@ -398,7 +398,7 @@ html,
 body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
   color: #454545;
-  background-color: #fff;
+  background-color: #fcfcfc;
 }
 a {
   color: #84bf44;
@@ -488,13 +488,14 @@ a.keyword {
 }
 /* container */
 #container {
-  width: 940px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   padding-top: 37px;
 }
 #container #content {
+  margin-top: 30px;
   display: block;
   *zoom: 1;
 }
@@ -511,11 +512,11 @@ a.keyword {
 }
 /* 2カラムレイアウト */
 #main {
-  width: 600px;
+  width: 750px;
   float: left;
 }
 #box2 {
-  width: 300px;
+  width: 230px;
   float: right;
 }
 /* 1カラムにしたい場合は下記のコメントアウトを外してください ----
@@ -550,8 +551,7 @@ a.keyword {
 ---- END 1カラム */
 /* header */
 #blog-title {
-  margin: 30px 0;
-  padding: 20px 0;
+  text-align: center;
 }
 #title {
   margin: 0;
@@ -570,7 +570,9 @@ a.keyword {
 }
 .header-image-enable #title,
 .header-image-enable #blog-description {
-  padding-left: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* パンくず（カテゴリーページで表示されます） */
 #top-box {
@@ -584,12 +586,14 @@ a.keyword {
 /* entry */
 .entry {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 .entry-header {
   padding: 0 0 10px 0;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
   position: relative;
 }
 .entry-title {
@@ -606,6 +610,7 @@ a.keyword {
   color: #84bf44;
   text-decoration: none;
   font-size: 90%;
+  font-weight: normal;
 }
 /* カテゴリ */
 .categories {
@@ -657,7 +662,6 @@ a.keyword {
   font-size: 95%;
   line-height: 1.7;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
 }
 .entry-content p {
   margin: 0 0 1em 0;
@@ -678,13 +682,14 @@ a.keyword {
   font-size: 160%;
 }
 .entry-content h2 {
-  font-size: 150%;
+  font-size: 140%;
+  border-bottom: 1px solid #ddd;
 }
 .entry-content h3 {
-  font-size: 140%;
+  font-size: 130%;
 }
 .entry-content h4 {
-  font-size: 130%;
+  font-size: 120%;
 }
 .entry-content h5 {
   font-size: 110%;
@@ -706,7 +711,7 @@ a.keyword {
   padding: 5px 10px;
 }
 .entry-content table th {
-  background: #f5f5f5;
+  background: #fcfcfc;
 }
 .entry-content blockquote {
   border: 1px solid #ddd;
